@@ -28,9 +28,19 @@
 # Your total grocery bill is $7
 
 def grocery_calculator():
-    # YOUR CODE GOES HERE
-    # You can delete the line below when you start adding code
-    pass
+    my_dict = {'bread': 3, 'eggs': 6, 'milk': 4, 'butter': 2}
+    total_cost = 0
+    while True:
+        grocery_item = input("Input grocery item (or press Enter to finish): ").lower()
+        if grocery_item in my_dict:
+            total_cost += my_dict[grocery_item]
+        elif grocery_item == "":
+            break
+        else:
+            print ("The store doesn't have that")
+    print ("Your total grocery bill is $" + str(total_cost))
+            
+        
 
 if __name__ == "__main__":
     grocery_calculator()
