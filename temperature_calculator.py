@@ -32,6 +32,7 @@ def temperature_calculator():
             temperatures.append(temp)
             avg_temp = sum(temperatures)/len(temperatures)
             print ("The average temperature so far is " + str(avg_temp))
+    #retry
 
 if __name__ == "__main__":
     temperature_calculator()

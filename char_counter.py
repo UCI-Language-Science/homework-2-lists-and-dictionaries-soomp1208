@@ -30,6 +30,7 @@ def char_counter():
     for char in my_str:
         char_counts[char] = char_counts.get(char,0)+1
     print(char_counts)
+    #retry
 
 if __name__ == "__main__":
     char_counter()

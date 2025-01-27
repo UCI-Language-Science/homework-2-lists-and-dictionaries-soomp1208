@@ -12,6 +12,7 @@ def duplicate_remover():
         if int not in duplicates_gone:
             duplicates_gone.append(int)
     print(duplicates_gone)
+    #retry
 
 if __name__ == "__main__":
     duplicate_remover()
